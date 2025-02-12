@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Empresa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Creación de Empresa - resuelve las preguntas</h1>
+    <div id="configuracion-inicial">
+      <h2>Configuración Inicial</h2>
+      <label for="nombre-empresa">Nombre de la empresa:</label>
+      <input type="text" id="nombre-empresa" placeholder="Ingresa tu empresa">
+      <label for="nicho-mercado">Elige el nicho de mercado:</label>
+      <select id="nicho-mercado">
+        <option value="0">Tecnología y software</option>
+        <option value="1">Moda y accesorios</option>
+        <option value="2">Alimentos y bebidas</option>
+        <option value="3">Servicios profesionales</option>
+      </select>
+      <label for="capital-inicial">Define tu capital inicial:</label>
+      <select id="capital-inicial">
+        <option value="0">Bajo (menos de 5000 soles)</option>
+        <option value="1">Medio (s/.5,000 - s/.10,000)</option>
+        <option value="2">Alto (s/.50,000)</option>
+      </select>
+      <button id="siguiente-config">Siguiente</button>
+    </div>
+    <div id="preguntas" style="display: none;">
+      <h2>Preguntas</h2>
+      <div id="pregunta-actual"></div>
+      <button id="siguiente-preg">Siguiente</button>
+    </div>
+    <div id="resultado" style="display: none;">
+      <h2>Resultado Final</h2>
+      <p id="porcentaje-exito"></p>
+      <p id="retroalimentacion"></p>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
